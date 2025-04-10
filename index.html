@@ -2,15 +2,127 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Officiell portfolio för Daniel Salim - fotbollsspelare" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Daniel Salim | Fotbollsspelare</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #333;
       margin: 0;
-      padding: 2rem;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      color: #222;
     }
-    .
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: white;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      border-radius: 16px;
+      margin-top: 2rem;
+    }
+
+    img.profile {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      color: #0e639c;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    ul.links a {
+      display: block;
+      margin: 0.5rem 0;
+      color: #0e639c;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    ul.links a:hover {
+      text-decoration: underline;
+    }
+
+    .match-list {
+      background: #eef6ff;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .match-item {
+      margin-bottom: 0.5rem;
+    }
+
+    form {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 0.75rem;
+      background-color: #0e639c;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #094a77;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="profile.jpg" alt="Daniel Salim" class="profile" />
+    <h1>Daniel Salim</h1>
+    <p><strong>Position:</strong> Back</p>
+    <p>Fotbollen har alltid varit en viktig del av mitt liv. Jag spelar med passion och engagemang och älskar att utvecklas både individuellt och i laget.</p>
+
+    <h2>Länkar</h2>
+    <ul class="links">
+      <li><a href="https://www.svenskalag.se/brottbysk-herr/nyheter/1343163/fotbollen-har-alltid-varit-en-del-av-mitt-liv" target="_blank">📖 Intervju på Svenskalag.se</a></li>
+      <li><a href="https://www.lagstatistik.se/player?playerId=77454" target="_blank">📊 Statistik på Lagstatistik.se</a></li>
+      <li><a href="https://www.instagram.com/danielsaalle/" target="_blank">📸 Instagram</a></li>
+    </ul>
+
+    <h2>Kommande matcher</h2>
+    <div class="match-list">
+      <div class="match-item">20 april – Brottby SK vs Vallentuna BK – Hemmaplan</div>
+      <div class="match-item">28 april – Åkersberga FC vs Brottby SK – Bortamatch</div>
+    </div>
+
+    <h2>Kontakt</h2>
+    <form>
+      <input type="text" placeholder="Ditt namn" required />
+      <input type="email" placeholder="Din e-post" required />
+      <textarea placeholder="Ditt meddelande" rows="4" required></textarea>
+      <button type="submit">Skicka</button>
+    </form>
+  </div>
+</body>
+</html>
